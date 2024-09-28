@@ -1,7 +1,7 @@
-import Pattern.ReverseHalfPyramid;
+import Pattern.Pyramid;
 
 public class Main {
     public static void main(String[] args) {
-        ReverseHalfPyramid pattern = new ReverseHalfPyramid(5);
+        Pyramid pattern = new Pyramid(9);
     }
 }
