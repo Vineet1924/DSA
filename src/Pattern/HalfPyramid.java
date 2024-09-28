@@ -1,12 +1,13 @@
 package Pattern;
 
-public class Pyramid {
+public class HalfPyramid {
     private final int n;
 
-    public Pyramid(int n) {
+    public HalfPyramid(int n) {
         this.n = n;
         generatePattern();
         generateIncreaseNumberPattern();
+        generateNumberPattern();
     }
 
     private void generatePattern() {
@@ -22,6 +23,15 @@ public class Pyramid {
         for(int i = 1; i <= n; i++) {
             for(int j = 1; j <= i; j++) {
                 System.out.print(j + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    private void generateNumberPattern() {
+        for(int i = 1; i <= n; i++) {
+            for(int j = 1; j <= i; j++) {
+                System.out.print(i + " ");
             }
             System.out.println();
         }
