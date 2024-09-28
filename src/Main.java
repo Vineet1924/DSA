@@ -2,6 +2,6 @@ import Pattern.*;
 
 public class Main {
     public static void main(String[] args) {
-        Butterfly b = new Butterfly(5);
+        Matrix m = new Matrix(5,5);
     }
 }
