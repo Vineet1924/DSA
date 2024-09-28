@@ -7,6 +7,7 @@ public class Matrix {
     public Matrix(int row, int column) {
         this.row = row;
         this.column = column;
+        generatePattern();
     }
 
     private void generatePattern() {
@@ -14,6 +15,7 @@ public class Matrix {
             for(int j = 0; j < column; j++) {
                 System.out.print("* ");
             }
+            System.out.println();
         }
     }
 }
