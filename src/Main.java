@@ -1,8 +1,9 @@
 import Pattern.Daimond;
+import Pattern.HalfDaimond;
 import Pattern.Pyramid;
 
 public class Main {
     public static void main(String[] args) {
-        Daimond pattern = new Daimond(9);
+        HalfDaimond pattern = new HalfDaimond(10);
     }
 }

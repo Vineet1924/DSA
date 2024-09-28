@@ -6,8 +6,8 @@ public class HalfPyramid {
     public HalfPyramid(int n) {
         this.n = n;
         generatePattern();
-        generateIncreaseNumberPattern();
         generateNumberPattern();
+        generateIncreaseNumberPattern();
     }
 
     private void generatePattern() {
