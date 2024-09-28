@@ -11,6 +11,7 @@ public class HalfPyramid {
         generateBinaryHalfPyramid();
         generateNumberPyramid();
         generateAlphabetPyramid();
+        generateAlphabeticPattern();
     }
 
     private void generatePattern() {
@@ -66,6 +67,16 @@ public class HalfPyramid {
         for(int i = 0; i < n; i++) {
             for(int j = 0; j <= i; j++) {
                 System.out.print((char) (ascii + j) + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    private  void generateAlphabeticPattern() {
+        int ascii = 65;
+        for(int i = 0; i < n; i++) {
+            for(int j = 0; j <= i; j++) {
+                System.out.print((char) (ascii + i) + " ");
             }
             System.out.println();
         }
