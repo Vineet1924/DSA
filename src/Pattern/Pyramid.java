@@ -6,6 +6,7 @@ public class Pyramid {
     public Pyramid(int n) {
         this.n = (n / 2) + 1;
         generatePattern();
+        generateReveresPyramid();
     }
 
     private void generatePattern() {
@@ -17,6 +18,21 @@ public class Pyramid {
                 System.out.print("* ");
             }
             for(int j = 1; j <= (i - 1); j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    private void generateReveresPyramid() {
+        for(int i = 0; i < n; i++) {
+            for(int j = 1; j <= i; j++) {
+                System.out.print("  ");
+            }
+            for(int j = 0; j < (n - i); j++) {
+                System.out.print("* ");
+            }
+            for(int j = 0; j < (n - (i + 1)); j++) {
                 System.out.print("* ");
             }
             System.out.println();
