@@ -9,6 +9,7 @@ public class Matrix {
         this.column = column;
         generatePattern();
         generateHollowMatrix();
+        generatePyramidMatrix();
     }
 
     private void generatePattern() {
@@ -26,6 +27,42 @@ public class Matrix {
                 if(i == 1 || j == 1 || i == row || j == column)
                     System.out.print("* ");
                 else System.out.print("  ");
+            }
+            System.out.println();
+        }
+    }
+
+    private void generatePyramidMatrix() {
+        int n = row;
+        for(int i = 1; i <= n; i++) {
+            for(int j = 0; j < i; j++) {
+                System.out.print(n - j + " ");
+            }
+            for(int j = 1; j <= (n - i); j++) {
+                System.out.print(((n - i) + 1) + " ");
+            }
+            for(int j = 1; j <= ((n - i) - 1); j++) {
+                System.out.print(((n - i) + 1) + " ");
+            }
+            for(int j = i; j > 0; j--) {
+                if(n == j) continue;
+                System.out.print((n - j) + 1 + " ");
+            }
+            System.out.println();
+        }
+        for(int i = (n - 1); i > 0; i--) {
+            for(int j = 0; j < i; j++) {
+                System.out.print(n - j + " ");
+            }
+            for(int j = 1; j <= (n - i); j++) {
+                System.out.print(((n - i) + 1) + " ");
+            }
+            for(int j = 1; j <= ((n - i) - 1); j++) {
+                System.out.print(((n - i) + 1) + " ");
+            }
+            for(int j = i; j > 0; j--) {
+                if(n == j) continue;
+                System.out.print((n - j) + 1 + " ");
             }
             System.out.println();
         }
