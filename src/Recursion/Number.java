@@ -13,5 +13,11 @@ public class Number {
         System.out.print("GFG ");
         printGfg(--n);
     }
+
+    public void printNos(int n) {
+        if(n < 1) return;
+        System.out.print(n + " ");
+        printNos(--n);
+    }
 }
 
