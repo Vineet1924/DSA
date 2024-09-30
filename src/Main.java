@@ -1,7 +1,9 @@
 import Pattern.*;
+import Recursion.Number;
 
 public class Main {
     public static void main(String[] args) {
-        Matrix m = new Matrix(4,5);
+        Number n = new Number();
+        n.printNumbers(10);
     }
 }
