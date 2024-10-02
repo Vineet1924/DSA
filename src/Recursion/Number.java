@@ -55,5 +55,17 @@ public class Number {
         arr[i] = arr[j];
         arr[j] = temp;
     }
+
+    public boolean isPalindrome(String s) {
+        if(s.equals(" ") || s.equals("")) return true;
+        return palindromeHelper(s, 0, s.length() - 1);
+    }
+    public boolean palindromeHelper(String s, int i, int j) {
+        if(i >= j) return true;
+        if(!Character.isLetterOrDigit(s.charAt(i))) return palindromeHelper(s, ++i, j);
+        if(!Character.isLetterOrDigit(s.charAt(j))) return palindromeHelper(s, i, --j);
+        if (Character.toLowerCase(s.charAt(i)) != Character.toLowerCase(s.charAt(j))) return false;
+        return palindromeHelper(s, ++i, --j);
+    }
 }
 
