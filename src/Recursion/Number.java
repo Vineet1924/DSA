@@ -19,5 +19,10 @@ public class Number {
         System.out.print(n + " ");
         printNos(--n);
     }
+
+    public long sumOfSeries(int n) {
+        if(n == 1) return 1;
+        return (long) Math.pow(n, 3) + sumOfSeries(n - 1);
+    }
 }
 

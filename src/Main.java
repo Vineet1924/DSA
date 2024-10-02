@@ -4,6 +4,6 @@ import Recursion.Number;
 public class Main {
     public static void main(String[] args) {
         Number n = new Number();
-        n.printNos(10);
+        System.out.print(n.sumOfSeries(5));
     }
 }
