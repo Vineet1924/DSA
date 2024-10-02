@@ -39,5 +39,21 @@ public class Number {
         i++;
         return factorial(ans, n, i, prev);
     }
+
+    public void reverseArray(int[] arr) {
+        reverseArrayHelper(arr, 0, arr.length - 1);
+    }
+
+    private void reverseArrayHelper(int[] arr, int i, int n) {
+        if(i >= n) return;
+        swap(arr, i, n);
+        reverseArrayHelper(arr, ++i, --n);
+    }
+
+    private void swap(int[] arr, int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
 }
 
